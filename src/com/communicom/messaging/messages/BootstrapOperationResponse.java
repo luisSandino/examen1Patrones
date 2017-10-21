@@ -1,16 +1,20 @@
 package com.communicom.messaging.messages;
 
+import java.time.LocalDateTime;
+
 public class BootstrapOperationResponse extends Message{
+	
+	public BootstrapOperationResponse(String messageName, int messageNumber, String sourceAddress, String targetAddress,
+			LocalDateTime emisionTime) {
+		super(messageName, messageNumber, sourceAddress, targetAddress, emisionTime);
+		
+	}
+
 	private String version;
 	private boolean result;
 	private String errorMessage;
 	
-	@Override
-	public String toString() {
-		return "BootstrapOperationResponse [version=" + version + ", result=" + result + ", errorMessage="
-				+ errorMessage + ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()="
-				+ super.toString() + "]";
-	}
+
 
 	public String getVersion() {
 		return version;

@@ -12,6 +12,27 @@ public class Message {
 	private LocalDateTime emisionTime;
 	
 	
+	
+	
+	@Override
+	public String toString() {
+		return "Nombre del mensaje= " + messageName + ", número de mensaje= " + messageNumber + ", Fecha del mensaje= "
+				+ emisionTime + "]";
+	}
+	public Message(String messageName, int messageNumber, String sourceAddress, String targetAddress,
+			LocalDateTime emisionTime) {
+		super();
+		this.messageName = messageName;
+		this.messageNumber = messageNumber;
+		this.sourceAddress = sourceAddress;
+		this.targetAddress = targetAddress;
+		this.emisionTime = emisionTime;
+	}
+	
+	
+	public Message() {
+		super();
+	}
 	public String getMessageName() {
 		return messageName;
 	}
