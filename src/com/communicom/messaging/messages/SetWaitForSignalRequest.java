@@ -9,6 +9,13 @@ public class SetWaitForSignalRequest {
 	private SignalType signal;
 	private String signalValue;
 	
+	
+
+	public SetWaitForSignalRequest(SignalType signal, String signalValue) {
+		super();
+		this.signal = signal;
+		this.signalValue = signalValue;
+	}
 
 	public SignalType getSignal() {
 		return signal;

@@ -11,6 +11,13 @@ public class SetWaitForSignalResponse {
 	
 	
 
+	public SetWaitForSignalResponse(SignalType signal, String signalExpectedValue, String signalReceivedValue) {
+		super();
+		this.signal = signal;
+		this.signalExpectedValue = signalExpectedValue;
+		this.signalReceivedValue = signalReceivedValue;
+	}
+
 	public SignalType getSignal() {
 		return signal;
 	}
